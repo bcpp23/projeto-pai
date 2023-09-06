@@ -1,0 +1,68 @@
+/* PARTE DA BIANCA */
+
+#nome-contato1{
+    padding: 10px; 
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+ }
+ 
+ #email-contato1{
+     padding: 10px;
+     width: 200px;
+     border-radius: 5px;
+     margin-bottom: 10px;
+ }
+ 
+ #mensagem-contato1{
+     padding: 10px;
+     height: 70px;
+     width: 250px;  
+     border-radius: 5px; 
+     margin-bottom: 10px; /* vai mexer apenas em baixo, e não tudo*/
+ }
+ 
+ #botao-contato1{
+     width: 70px;
+     max-width: 70px;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     background-color: #5D3028;
+     color: white;
+     
+ }
+ 
+#img-cliente-contato1{
+    width: 280px;
+    max-width: 300px ;
+}
+
+#quadrado-rosa-contato1{
+    width: 300px;
+    max-width: 300px ;
+    height: 400px;
+    display: flex;
+}
+
+#article-contato1{
+    margin: 0 auto;
+    margin: 20%;
+}
+
+#redes-sociais-contato1{
+    text-align: center;
+}
+
+.frase1{
+    text-align: center;
+    color: #5D3028;
+    max-width: 300px ; 
+}
+
+#frase2{
+    color: #5D3028;
+}
+
+#redes-sociais-contato1{
+    color: #5D3028;
+}

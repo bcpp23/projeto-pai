@@ -1,224 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contato </title>
+    <title> Andreia Gazoli </title>
+    <meta name="description"
+        content="Andreia Gazoli é um site criado para fins educacionais da instituição de ensino Senac.">
+    <link rel="shortcut icon" href="img/bolo.png" type="imagex/png">
+    <link rel="stylesheet" href="#">
 </head>
-
-
-<style>
-
-
-    h1,h3,h4{
-        color: black;
-    }
-
-    body{
-        background-image:linear-gradient(rgb(240, 79, 106), rgb(243, 135, 153), rgb(245, 167, 180), rgb(247, 192, 201)); 
-    }
-
-
-    .final{
-    height: 10em;
-    position: relative;
-    flex-direction: row;
-        
-    }
-
-    #logo{
-        width: 100px;
-    }
-
-    
-
-    .foto-redesSociais{
-        height: auto;
-        
-    }
-
-    #mensagem{
-        width: 100px;
-    }
-
-
-    .rodape{
-        width: 200px;
-        height: 400px;
-        
-    }
-
-    #maps{
-        width: 120px;
-        height: 120px;
-
-    }
-
-    #localizacao-foto{
-        width: 20px;
-    }
-
-    #tudo-rodape{
-        background-color: white;
-        width: 170px;
-        height: 280px;
-        text-align: center;
-        position: fixed;
-        left: 50px;; 
-        bottom: -20%;
-        
-
-    }
-    
-
-    .imagem-rodape{
-        width: 20px;
-    }
-
-    .letra-rodape{
-        font-size: 8px; /* tamanho da fonte */
-    }
-
-
-    #ultimo{
-        height: 40px;
-        text-align: center;
-    }
-
-    #mensagem{
-        width: 178px;
-        height: 60px;
-        
-    }
-
-
-
-
-
-    .btn{
-        cursor: pointer;
-        border: none;
-        border-radius: 7px;
-        box-shadow: 7px 6px 28px 1px; /* deixa sombra no botao */
-        background-color: rgb(148, 92, 205);
-        transition: all 0.5s ease-in;
-        display: flex;
-    }
-
-    .btn2{
-        cursor: pointer;
-        border: none;
-        border-radius: 7px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: 7px 6px 28px 1px; /* deixa sombra no botao */
-        
-    }
-
-
-
-    
-</style>
 
 
 
 <body>
-
-
-    <header id="inicio">
-
-        <div>
-            <img src="img/Logo.png" alt="imagem-logo" id="logo">
-            
-
+    <header>
+        <nav id="topo">
             <div>
-                <nav>
-                    <a href="home.html" tabindex="1"> <button class="btn"> HOME </button> </a> <!--significa que o elemento deve ser focável e que pode ser localizado pela navegação sequencial do teclado, mas a sua posição será definida pela ordem no código-fonte do documento;-->
-                    <a href="contato.html" tabindex="2"> <button class="btn"> CONTATO </button> </a>
-                </nav>
+                <a href="index.html"><img src="img/Logo.png" alt="Logotipo" id="logo"></a>
             </div>
 
+            <div class="nav-list">
+                <ul>
+                    <li class="nav"><a href="index.html" tabindex="1" class="nav-iten">Home</a></li>
+                    <li class="nav"><a href="bolosEtortas.html" tabindex="2" class="nav-iten">Bolos e tortas</a></li>
+                    <li class="nav"><a href="receitas.html" tabindex="3" class="nav-iten">Receitas</a></li>
+                    <li class="nav"><a href="curso.html" tabindex="4" class="nav-iten">Curso</a></li>
+                    <li class="nav"><a href="contato.html" tabindex="5" class="nav-iten">Contatos</a></li>
+                </ul>
+            </div>
+
+            <div class="responsivo-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white.svg"></button>
+            </div>
+        </nav>
+
+        <div class="nav-responsivo">
+            <ul>
+                <li class="nav"><a href="index.html" tabindex="1" class="nav-iten">Home</a></li>
+                <li class="nav"><a href="bolosEtortas.html" tabindex="2" class="nav-iten">Bolos e tortas</a></li>
+                <li class="nav"><a href="receitas.html" tabindex="3" class="nav-iten">Receitas</a></li>
+                <li class="nav"><a href="curso.html" tabindex="4" class="nav-iten">Curso</a></li>
+                <li class="nav"><a href="contato.html" tabindex="5" class="nav-iten">Contatos</a></li>
+            </ul>
         </div>
     </header>
 
 
-
-
-    
-
-
-    <main>
-        <div id="meio">
-            <h1> Entre em contato conosco! </h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam nulla tempo</p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate, vitae quia.</p>
-                <p> Quer saber mais sobre nossos bolos, entre em contato conosco em nossas redes sociais.</p>  
-                <p> Horários de funcionamento do nosso establecimento, das 8:00 ás 23:00</p> 
-
-
-
-            <form>
-                <br>
-                <label for="nome" > Nome: </label>
-                <br>
-                <input type="text" id="nome" name="nome" placeholder="Nome">
-
-
-                <br>
-                <label for="email"> Email: </label>
-                <br>
-                <input type="email" id="email" name="email" placeholder="Email">
-
-                <br>
-                <label for="mensagem"> Mensagem: </label>
-                <br>
-                <input type="mensagem" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui">
-            </form> 
-
-            <br>
-            <div>
-                <button class="btn2"> Enviar </button>
-                <button class="btn2"> Limpar </button>
-                <br>
-                <br>
-                <br>
-            </div>
-        </div>
+    <div id="banner">
+        <!-- banner é a parte de baixo do header, exemplo da home -->
+        <div id="texto-banner"> </div>
+        <div id="foto-banner"> </div>
     </div>
+    <div id="background" background="img/backgroundLeft.png">
+        <main id="conteudo">
+            <div id="frase-destaque-home">
 
 
+                <!-- Bianca-->
+                <div id="imagem-cliente-contato1">
+                    <img href="img/Foto cliente.png" alt="imagem da tia do gustavo">
+                    <img href="img/Quadrado foto.png" alt="quadrado-rosa-contato1">
+                </div>
+                
+        <article>
+            <div id="article1-contato1">
+                <div id="contato1">
+                    <h1> CONTATO </h1>
+                    <p> Tem perguntas, comentários ou pedidos especiais? Será um prazer atendê-lo, entre em contato
+                        conosco e envie sua mensagem pelo formulário abaixo.</p>
+                </div>
+
+                <div class="formulario1">
+                    <input type="nome" placeholder="nome" id="nome-contato1">
+                </div>
+
+                <div class="formulario1">
+                    <input type="email" placeholder="email" id="email-contato1">
+                </div>
+
+                <div class="formulario1">
+                    <input type="mensagem" placeholder="mensagem" id="mensagem-contato1">
+
+                </div>
+
+                <div id="botao-contato1">
+                    <button> Enviar </button>
+                </div>
 
 
+                <!-- SELECTION-->
 
+             
+                <section>
+                    <h1> Siga-nos nas redes sociais e fique por dentro das novidades </h1>
 
+                    <div id="section-contato1">
+                        <div id="instragram-contato1">
+                            <img href="img/instagram 1.png" alt="instragram">
+                            <h1> Instagram </h1>
+                            <p> pegar o insta </p>
+                        </div>
 
-    <footer>
-        <div id="tudo-rodape">
-            <div id="rodape">
-                <br>
-                <a href="https://www.whatsapp.com"> <img src="img/whatsapp 1.png" alt="foto whatsapp"  class="imagem-rodape"></a>
-                    <p class="letra-rodape"><b> Whatsapp </b></p>
-                    <p class="letra-rodape"> 11 9897-1190 </p>
-                    <br>
+                        <div id="whatsapp-contato1">
+                            <img href="img/whatsapp 1.png" alt="Whatsapp">
+                            <h1> Whatsapp </h1>
+                            <p> (11) 94500-2424 </p>
+                        </div>
 
-                <a href="https://www.instagram.com/"> <img src="img/instagram 1.png" alt="foto instagram" class="imagem-rodape"></a>
-                    <p class="letra-rodape"><b> Instagram </b></p>
-                    <p class="letra-rodape"> @bibiCarol</p>
-                    <br>
+                        <div id="facebook-contato1">
+                            <img href="img/facebook(1) 1.png" alt="Facebook">
+                            <h1> Facebook </h1>
+                            <p> @chefandreiagazolli </p>
+                        </div>
+                    </div>
+                </section>
 
-                <p class="letra-rodape"><b> Localização </b></p>
-                    <a href="https://goo.gl/maps/bnEVbRr9apsKBdFX7"> <img src="img/icone localização.png " id="localizacao-foto"></a>
-                    <p class="letra-rodape">  ipsum dolor sit amet </p>
-                    
 
             </div>
-        </div>   
-
-
-        <div id="ultimo"> 
-            <hr>
-            Desenvolvido por <b> Bianca Caroline </b> site acadêmico | todos os direitos reservados | 2023   
         </div>
-    </footer>
+        </main>
+    </div>
+    </article>   
 
 
 
@@ -242,6 +146,70 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="rodape">
+        <footer>
+            <p class="rodape-logo">
+                <a href="index.html"><img src="img/Logo.png" alt="Logotipo" id="logo-footer"></a>
+            </p>
+
+            <div id="container-footer">
+                <div class="coluna-1">
+                    <p id="p-endereço-footer"><b>Endereço:</b></p>
+                    <p>Av. Osmundo dos Santos Pellegrini, 1791 <br> Recanto Quarto Centenário, Jundiaí - SP</p>
+                    <p id="p-contato-footer"><b>Contato:</b></p>
+                    <p>11 96578-8530</p>
+                </div>
+
+                <div class="coluna-2">
+                    <p id="p-funcionamento"><b>Horário de funcionamento:</b></p>
+                    <p>Sábado 08:30 - 14:00<br> Domingo 07:00 - 14:00</p>
+
+                    <div clas="redes-footer">
+                        <p id="p-siga"><b>Siga nossas redes:</b></p>
+                        <div id="redes-footer">
+                            <a href="https://www.instagram.com/chefandreiagazoli/" target="_blank"><img
+                                    src="img/logoFooterFace.png" alt="Logo do facebook"></a>
+                            <a href="https://www.facebook.com/chefandreiagazoli/" target="_blank"><img
+                                    src="img/LogoFooterInstagram.png" alt="Logo do Instagram"></a>
+                            <a href="https://www.youtube.com/channel/UCxFkQbluWB3-hZcHo23gQAA" target="_blank"><img
+                                    src="img/logoFooterYoutube.png" alt="Logo do Youtube"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coluna-3">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Bolos-e-tortas.html">Bolos e tortas</a></li>
+                        <li><a href="receitas.html">Receitas</a></li>
+                        <li><a href="contato.html">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="assinatura">
+                <p>Site acadêmico | Desenvolvido pelo grupo 4 | Todos os direitos reservados | 2023 &copy</p>
+            </div>
+
+        </footer>
     </main>
+
+    <script src="assets/javaScript/script.js"></script>
+
 </body>
 </html>
