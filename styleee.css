@@ -1,62 +1,66 @@
-/* PARTE DA BIANCA */
+/* BIANCA: contato responsivo */
 
 #nome-contato1{
+    background-color:#E6B5BA; 
     padding: 10px; 
-    width: 200px;
-    border-radius: 5px;
+    width: 73%;
+    border-radius: 20px;
     margin-bottom: 10px;
- }
+}
  
  #email-contato1{
-     padding: 10px;
-     width: 200px;
-     border-radius: 5px;
-     margin-bottom: 10px;
- }
+    background-color:#E6B5BA; 
+    padding: 10px;
+    width: 73%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
  
  #mensagem-contato1{
-     padding: 10px;
-     height: 70px;
-     width: 250px;  
-     border-radius: 5px; 
-     margin-bottom: 10px; /* vai mexer apenas em baixo, e não tudo*/
- }
+    background-color:#E6B5BA; 
+    padding: 10px;
+    height: 70px;
+    width: 90%;  
+    border-radius: 10px; 
+    margin-bottom: 10px; /* vai mexer apenas em baixo, e não tudo*/
+}
  
  #botao-contato1{
-     width: 70px;
-     max-width: 70px;
-     border-radius: 5px;
-     margin-bottom: 10px;
-     background-color: #5D3028;
-     color: white;
-     
- }
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: #5D3028;
+    color: white; 
+}
  
 #img-cliente-contato1{
-    width: 280px;
-    max-width: 300px ;
+    width: 60%;
+    max-width: 300px ;  
+    position: absolute; /* ficou um aimagem dentro da outra*/
+    left: 20%; /* trouxe a imagem para a esquerda*/
+    margin: 60px; /* deu uma margim (um espaço) do quadrado e da imagem cliente*/   
 }
 
 #quadrado-rosa-contato1{
-    width: 300px;
+    width: 104%;
     max-width: 300px ;
-    height: 400px;
-    display: flex;
+    height: 450px;  
+    
 }
 
-#article-contato1{
-    margin: 0 auto;
-    margin: 20%;
+
+#main-contato1{
+    margin: 0 20%;
 }
 
 #redes-sociais-contato1{
-    text-align: center;
+    text-align: center;    
 }
 
 .frase1{
     text-align: center;
     color: #5D3028;
-    max-width: 300px ; 
 }
 
 #frase2{
@@ -65,4 +69,23 @@
 
 #redes-sociais-contato1{
     color: #5D3028;
+}
+
+
+
+@media screen and (max-widht: 1200px) {
+    main{
+    width: 1200px;
+    margin: 0 auto;}
+
+    #nome-contato1{
+        background-color:#E6B5BA; 
+        padding: 10px; 
+        width: 73%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+
+
 }
