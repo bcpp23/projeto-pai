@@ -1,91 +1,174 @@
 /* BIANCA: contato responsivo */
 
-#nome-contato1{
-    background-color:#E6B5BA; 
-    padding: 10px; 
-    width: 73%;
+main{
+    margin: 0 20%;
+}
+#nome-contato1 {
+    background-color: #E6B5BA;
+    padding: 10px;
+    width: 74%;
     border-radius: 20px;
     margin-bottom: 10px;
 }
- 
- #email-contato1{
-    background-color:#E6B5BA; 
+
+#email-contato1 {
+    background-color: #E6B5BA;
     padding: 10px;
     width: 73%;
     border-radius: 20px;
     margin-bottom: 10px;
 }
- 
- #mensagem-contato1{
-    background-color:#E6B5BA; 
+
+#mensagem-contato1 {
+    background-color: #E6B5BA;
     padding: 10px;
     height: 70px;
-    width: 90%;  
-    border-radius: 10px; 
-    margin-bottom: 10px; /* vai mexer apenas em baixo, e não tudo*/
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* vai mexer apenas em baixo, e não tudo*/
 }
- 
- #botao-contato1{
+
+#botao-contato1 {
     width: 70px;
     height: 35px;
     border-radius: 20px;
     margin-bottom: 10px;
     background-color: #5D3028;
-    color: white; 
-}
- 
-#img-cliente-contato1{
-    width: 60%;
-    max-width: 300px ;  
-    position: absolute; /* ficou um aimagem dentro da outra*/
-    left: 20%; /* trouxe a imagem para a esquerda*/
-    margin: 60px; /* deu uma margim (um espaço) do quadrado e da imagem cliente*/   
+    color: white;
 }
 
-#quadrado-rosa-contato1{
-    width: 104%;
-    max-width: 300px ;
-    height: 450px;  
-    
+#img-cliente-contato1 {
+    width: 100%;
+max-width: 300px;
+margin: 0 auto;
+    /* trouxe a imagem para a esquerda*/
+   
 }
 
 
-#main-contato1{
+#main-contato1 {
     margin: 0 20%;
 }
 
-#redes-sociais-contato1{
-    text-align: center;    
+#redes-sociais-contato1 {
+    text-align: center;
 }
 
-.frase1{
+.frase1 {
     text-align: center;
     color: #5D3028;
 }
 
-#frase2{
+#frase2 {
     color: #5D3028;
 }
 
-#redes-sociais-contato1{
+#redes-sociais-contato1 {
     color: #5D3028;
 }
 
 
-
-@media screen and (max-widht: 1200px) {
-    main{
-    width: 1200px;
-    margin: 0 auto;}
-
-    #nome-contato1{
-        background-color:#E6B5BA; 
-        padding: 10px; 
-        width: 73%;
-        border-radius: 20px;
-        margin-bottom: 10px;
+/* apartir de 1200 a página terá o seguinte comportamento.*/
+@media (min-width:1200px){
+   
+    main {
+        width: 1000px;
+        margin: 0 auto;
     }
 
+    #nome-contato1{
+        width: 250px;
+    }
 
+    #email-contato1{
+        width: 250px;
+    }
 
+    #mensagem-contato1 {
+        width: 340px;
+    }
 }
+
+
+@media (min-width:600px) and (max-width:1200px){
+
+    #nome-contato1{
+        width: 250px;
+    }
+
+    #email-contato1{
+        width: 250px;
+    }
+
+    #mensagem-contato1 {
+        width: 340px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    #img-cliente-contato1 {
+        width: 100%;
+        max-width: 300px;
+        position: relative;
+        right: 5px;
+        margin: 0 14%;
+        /* trouxe a imagem para a esquerda*/
+       
+    }
+}
+
+@media (min-width: 841px) and (max-width: 1199px){
+
+
+    /* Fazer um id para h3 para não dar conflito quando juntar o trabalho*/
+    h3{
+        margin-bottom: 50px;
+    }
+
+    p{
+        width: 300px;    
+    }
+
+    .imgForms{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        /* margin: 0 auto; */
+    }
+
+    #section-contato1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #img-cliente-contato1 {
+            width: 217px;
+            margin-left: 42px;
+            
+    }
+
+    #botao-contato1{
+        margin-bottom: 40px;
+    }
+
+    main{
+        width: 1199px;
+    }
+}
+    
+
+/* @media (min-width: 1001px) and (max-width: 1199px){
+    .imgForms{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    #img-cliente-contato1 {
+        width: 217px;
+        margin-left: 42px;
+    }
+
+    
+    } */
