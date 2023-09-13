@@ -3,30 +3,25 @@
 main{
     margin: 0 20%;
 }
-#nome-contato1 {
-    background-color: #E6B5BA;
-    padding: 10px;
+#nome-contato1, #email-contato1 {
+   
     width: 74%;
     border-radius: 20px;
     margin-bottom: 10px;
 }
 
-#email-contato1 {
-    background-color: #E6B5BA;
-    padding: 10px;
-    width: 73%;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-
 #mensagem-contato1 {
-    background-color: #E6B5BA;
-    padding: 10px;
+
     height: 70px;
     width: 90%;
     border-radius: 10px;
-    margin-bottom: 10px;
     /* vai mexer apenas em baixo, e não tudo*/
+}
+
+.formulario1 input{
+    background-color: #E6B5BA;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 #botao-contato1 {
@@ -90,7 +85,7 @@ margin: 0 auto;
     }
 }
 
-
+/* Esse comportamento é do formulário, para não esticar os inputs*/
 @media (min-width:600px) and (max-width:1200px){
 
     #nome-contato1{
@@ -106,6 +101,7 @@ margin: 0 auto;
     }
 }
 
+/* apartir de 600 vai ter o seguinte comportamento*/
 @media (min-width: 600px) and (max-width: 900px){
     #img-cliente-contato1 {
         width: 100%;
@@ -118,7 +114,8 @@ margin: 0 auto;
     }
 }
 
-@media (min-width: 841px) and (max-width: 1199px){
+/* apartir de 841 vai ter o seguinte comportamento*/
+@media (min-width: 841px) {
 
 
     /* Fazer um id para h3 para não dar conflito quando juntar o trabalho*/
@@ -152,11 +149,37 @@ margin: 0 auto;
         margin-bottom: 40px;
     }
 
-    main{
-        width: 1199px;
-    }
-}
+      main{ 
+        width: 840px;
+    } 
+} 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @media (min-width: 1001px) and (max-width: 1199px){
     .imgForms{
